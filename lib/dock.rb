@@ -1,5 +1,16 @@
 
   class Bike
+    def initialize
+  x = rand(100)
+  @working = x > 10
+  #returns if true
+end
+  def is_working?
+    @working
+  end
+def working
+  @working
+end
     
   end
 
@@ -22,16 +33,5 @@
     return true
   else
     return false
-  end
-=end
-
-
-def initialize
-  x = rand(100)
-  @working = x > 10
-  #returns if true
-end
-  def is_working?
-    @working
   end
 =end

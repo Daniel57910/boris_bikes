@@ -12,7 +12,9 @@ describe "DockingStation" do
 end
 
 describe "Bike" do
-  it "returns a failed bike" do
-    expect(Bike.new.is_working?).to eq(false)
+  it "returns the correct condition of the bike" do
+    bike = Bike.new
+    expect(bike.working).to eq bike.is_working?
   end
 end
+

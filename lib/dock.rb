@@ -40,14 +40,9 @@
     end
 
    
-      #10% probability of broken bike
   end
 
-  docking_station = DockingStation.new
-  bike = Bike.new
 
-  if docking_station.release_bike == "yes"
-    
 
 =begin
   if docking_station.release_bike == "yes"

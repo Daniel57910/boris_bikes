@@ -16,5 +16,11 @@ describe "Bike" do
     bike = Bike.new
     expect(bike.working).to eq bike.is_working?
   end
+  it "release method is working correctly" do
+    bike = Bike.new
+    docking_station = DockingStation.new
+    docking_station.release_bike(bike)
+    expect(bike.is_working?).to eq bike.bike_status
+  end
 end
 

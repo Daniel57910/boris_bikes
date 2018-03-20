@@ -6,7 +6,13 @@ describe "DockingStation" do
     #rspec calls docking station and creates an instance of it
   end
 
-  it "has the release bike method" do
-    expect(DockingStation.new.release_bike).not_to raise_error
+  it "calls the release bike method" do
+    expect(DockingStation.new).respond_to?(:release_bike)
+  end
+end
+
+describe "Bike" do
+  it "returns a failed bike" do
+    expect(Bike.new.is_working?).to eq(false)
   end
 end

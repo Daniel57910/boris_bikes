@@ -12,6 +12,10 @@
     def working
       @working
     end
+    def bike_status
+      @bike
+    end
+
 
     def released
       @bike = true
